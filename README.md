@@ -105,12 +105,14 @@ The primary objective of this project is to optimize the direct marketing effort
 ### Initial Model Comparisons
 Several machine learning models were trained, and their performance was compared:
 
+## Model Comparison
+
 | Model                  | Train Time | Train Accuracy | Test Accuracy | Precision | Recall  | F1-Score | AUC    |
 |------------------------|------------|----------------|---------------|-----------|---------|----------|--------|
-| Logistic Regression     | 0.28s      | 0.91           | 0.91          | 0.66      | 0.42    | 0.51     | 0.93   |
-| Decision Tree           | 0.24s      | 1.00           | 0.89          | 0.51      | 0.53    | 0.52     | 0.73   |
-| KNN                     | 0.0027s    | 0.93           | 0.90          | 0.59      | 0.40    | 0.47     | 0.86   |
-| SVM                     | 232s       | 0.91           | 0.91          | 0.68      | 0.34    | 0.45     | 0.93   |
+| Logistic Regression     | 0.24s      | 0.91           | 0.91          | 0.66      | 0.42    | 0.51     | 0.93   |
+| Decision Tree           | 0.20s      | 1.00           | 0.89          | 0.51      | 0.53    | 0.52     | 0.73   |
+| KNN                     | 0.0025s    | 0.93           | 0.90          | 0.59      | 0.40    | 0.47     | 0.86   |
+| SVM                     | 188s       | 0.91           | 0.91          | 0.68      | 0.34    | 0.45     | 0.93   |
 
   - **Decision Tree** had the best performance with a comparable AUC of 0.93 and the highest F1 score of 0.57, indicating a good balance between precision and recall.
   - **Logistic Regression** also performed well, with a slightly lower F1 score but higher interpretability.
