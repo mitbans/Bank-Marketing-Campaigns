@@ -211,17 +211,9 @@ The decision tree model provides insight into different customer segments, guidi
 
 ### Running the Project:
 
-1. **Clone the Repository:**
+**Clone the Repository:**
    ```bash
-   git clone https://github.com/your-repository/bank-term-deposit-prediction.git
-   ```
-2. **Install Dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Run the Notebook:**
-   ```bash
-   jupyter notebook bank_term_deposit_prediction.ipynb
+   git clone https://github.com/mitbans/Bank-Marketing-Campaigns.git
    ```
 
 ### Further Steps:
