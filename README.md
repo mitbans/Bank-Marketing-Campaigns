@@ -225,7 +225,7 @@ The decision tree model provides insight into different customer segments, guidi
 
 **Clone the Repository:**
    ```bash
-   git clone https://github.com/mitbans/Bank-Marketing-Campaigns.git
+   git clone https://github.com/mitbans/Bank-Marketing-Campaigns-Analysis.git
    ```
 
 ### Further Steps:
