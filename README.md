@@ -14,6 +14,8 @@ This project aims to compare the performance of various classification algorithm
 5. [Evaluation](#evaluation)
 6. [Deployment](#deployment)
 7. [Usage](#usage)
+8. [Repository Structure](#repository-structure)
+9. [Notebook](#notebook)
 
 ## Business Understanding
 
@@ -150,7 +152,7 @@ The following table summarizes the performance metrics for the improved models:
    - While KNN achieved perfect train accuracy, indicating it might be overfitting, its test accuracy was slightly lower at 0.9024.
    - KNN has the lowest recall at 0.3179, indicating it missed many true positives, but it maintained a decent AUC.
 
-### Conclusion
+### Conclusion: Best Model
 
 The Decision Tree model stands out as the best performer for this classification task, especially in terms of the F1 score and test accuracy. This model offers a good balance between precision and recall, making it a strong candidate for deployment. Logistic Regression also performed well and could be considered depending on the specific use case requirements. However, KNN, despite its high training accuracy, may require further tuning or regularization to improve generalization and recall.
 
@@ -160,48 +162,39 @@ These findings suggest that feature engineering, further hyperparameter tuning, 
 
 The decision tree model provides insight into different customer segments, guiding targeted marketing strategies:
 
-### Segment 1: Low Employment, Short Call Duration
+#### Segment 1: Low Employment, Short Call Duration
 - **Characteristics**: Customers in regions with low employment rates and short call durations.
 - **Behavior**: Less likely to subscribe unless call duration is slightly longer.
 - **Recommendations**: Engage customers by extending conversations and focusing on understanding their needs.
 
-### Segment 2: Low Employment, Long Call Duration
+#### Segment 2: Low Employment, Long Call Duration
 - **Characteristics**: Customers in low employment regions with longer call durations.
 - **Behavior**: More likely to subscribe, especially if there have been few prior contacts.
 - **Recommendations**: Use the extended call time to build a strong connection and present term deposits as a secure investment option.
 
-### Segment 3: High Employment, Short Call Duration
+#### Segment 3: High Employment, Short Call Duration
 - **Characteristics**: Customers in high employment regions but with short call durations.
 - **Behavior**: Less likely to subscribe, especially with low economic confidence.
 - **Recommendations**: Address concerns early in the conversation and suggest follow-up emails or digital resources.
 
-### Segment 4: High Employment, Long Call Duration with Favorable Economic Conditions
+#### Segment 4: High Employment, Long Call Duration with Favorable Economic Conditions
 - **Characteristics**: Customers in regions with high employment, long call durations, and favorable economic conditions.
 - **Behavior**: More likely to subscribe, particularly if economic indicators are positive.
 - **Recommendations**: Emphasize the benefits of term deposits and introduce related financial products.
 
-### Segment 5: High Employment, Long Call Duration with Unfavorable Economic Conditions
+#### Segment 5: High Employment, Long Call Duration with Unfavorable Economic Conditions
+
 - **Characteristics**: Customers in regions with high employment, long call durations, but facing less favorable economic indicators.
 - **Behavior**: Decision to subscribe is nuanced and influenced by economic conditions.
 - **Recommendations**: Provide products with flexibility and stress the security of the investment.
 
 ## Marketing Strategies
 
-### Tailored Campaigns
-Develop targeted marketing campaigns based on customer segments, focusing on their specific needs and preferences.
-
-### Call Duration Optimization
-Implement strategies to increase call duration for segments with lower conversion rates.
-
-### Economic Indicators
-Continuously monitor economic indicators and adjust marketing strategies accordingly.
-
-### Agent Training
-Equip sales agents with knowledge about different customer segments and how to tailor their approach.
-
-### Customer Relationship Management (CRM)
-Utilize CRM systems to track customer interactions, preferences, and purchase history for personalized marketing.
-
+  - **Tailored Campaigns:** Develop targeted marketing campaigns based on customer segments, focusing on their specific needs and preferences.
+  - **Call Duration Optimization:** Implement strategies to increase call duration for segments with lower conversion rates.
+  - **Economic Indicators:** Continuously monitor economic indicators and adjust marketing strategies accordingly.
+  - **Agent Training:** Equip sales agents with knowledge about different customer segments and how to tailor their approach.
+  - **Customer Relationship Management (CRM):** Utilize CRM systems to track customer interactions, preferences, and purchase history for personalized marketing.
 
 ## Deployment
 
@@ -233,6 +226,15 @@ Utilize CRM systems to track customer interactions, preferences, and purchase hi
 
 ### Further Steps:
 - Deploy the model using a web application framework like Flask or Streamlit for user-friendly interaction.
+
+## Repository Structure
+- <code>data/</code>: Contains dataset used in the analysis.
+- <code>images/decision_tree.pdf</code>: Contains final Decision Tree Model.
+- <code>notebooks/Predicting-Long-Term-Deposit-Success.ipynb</code>: Jupyter notebook with code for data analysis.
+- <code>README.md</code>: Summary of findings and link to notebook
+
+## Notebook
+The detailed analysis and code can be found in the Jupyter notebook <a href="https://github.com/mitbans/Bank-Marketing-Campaigns/blob/main/notebooks/Predicting-Long-Term-Deposit-Success.ipynb">here</a>.
 
 ---
 
