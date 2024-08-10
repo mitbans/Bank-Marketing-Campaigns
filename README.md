@@ -25,8 +25,8 @@ The primary objective of this project is to optimize the direct marketing effort
 
 ### Dataset Overview
 
-- **Source:** UCI Machine Learning Repository
-- **Content:** The dataset comprises data collected from 17 marketing campaigns conducted between May 2008 and November 2010, resulting in 41,176 records.
+- **Source:** UCI Machine Learning Repository, <a href="https://archive.ics.uci.edu/dataset/222/bank+marketing">link</a>
+- **Content:** The dataset 'bank-additional-full.csv' comprises data collected from 17 marketing campaigns conducted between May 2008 and November 2010, resulting in 41,188 records and 20 inputs.
 - **Attributes:** The dataset includes various features related to client demographics, previous campaign interactions, and economic indicators.
   
 ### Key Features:
@@ -220,7 +220,7 @@ The decision tree model provides insight into different customer segments, guidi
 - Deploy the model using a web application framework like Flask or Streamlit for user-friendly interaction.
 
 ## Repository Structure
-- <code>data/</code>: Contains dataset used in the analysis.
+- <code>data/bank-additional-full.csv</code>: Contains dataset used in the analysis.
 - <code>images/decision_tree.pdf</code>: Contains final Decision Tree Model.
 - <code>notebooks/Predicting-Long-Term-Deposit-Success.ipynb</code>: Jupyter notebook with code for data analysis.
 - <code>README.md</code>: Summary of findings and link to notebook
